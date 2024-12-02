@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Hassan Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <body style="background-color: lightblue;">
+        <!-- Page content here -->
+    </body>
+
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Muhammad Hassan Logo" width="190" height="80">
+            </div>
+            <button class="toggle-btn" id="menu-toggle">&#9776;</button>
+            <nav id="navbar" class="hidden">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="intro">
+            <h1>Welcome to <span>Muhammad Hassan's Portfolio</span></h1>
+            <p>Your Partner in Building Digital Success</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/pic3.png" alt="Profile Picture" width="200" height="200">
+            <p>I am a passionate developer and digital marketer specializing in creating dynamic, responsive websites. With expertise in WordPress, web development, and marketing strategies, I help businesses thrive online.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="project">
+                <a href="https://www.coastalroofs.com/" target="_blank">
+                    <img src="images/project1.png" alt="Project 1" width="400" height="300">
+                </a>
+                <h3>Project 1</h3>
+                <button class="btn" onclick="viewProject('https://www.coastalroofs.com/')">View More</button>
+            </div>
+            <div class="project">
+                <a href="https://advertisingdesigntech.com/" target="_blank">
+                    <img src="images/project2.png" alt="Project 2" width="400" height="300">
+                </a>
+                <h3>Project 2</h3>
+                <button class="btn" onclick="viewProject('https://advertisingdesigntech.com/')">View More</button>
+            </div>
+            <!-- Add more projects -->
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <h3>WordPress Development</h3>
+                <p>Custom themes and plugins for a powerful WordPress experience.</p>
+            </div>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>Responsive, dynamic websites tailored to your needs.</p>
+            </div>
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <p>Marketing strategies that drive growth and engagement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact form -->
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form action="#" method="post" class="contact-form">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Your name.." required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Your last name.." required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here.." rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+<footer class="footer">
+    <p>© 2024 Muhammad Hassan Portfolio. All Rights Reserved.</p>
+</footer>
+
+</html>
